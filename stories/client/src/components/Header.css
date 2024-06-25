@@ -1,0 +1,35 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .slide-enter {
+    transform: translateX(100%);
+  }
+  .slide-enter-active {
+    transform: translateX(0);
+    transition: transform 300ms ease-in-out;
+  }
+  .slide-exit {
+    transform: translateX(0);
+  }
+  .slide-exit-active {
+    transform: translateX(100%);
+    transition: transform 300ms ease-in-out;
+  }
+  .slide-in-from-right {
+    transform: translateX(0);
+  }
+  
+  .nav-bg {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+  
+  .nav-open {
+    transform: translateX(0%);
+  }
+  
+  .nav-closed {
+    transform: translateX(-100%);
+  }
+  

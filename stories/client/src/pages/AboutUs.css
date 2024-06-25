@@ -1,0 +1,30 @@
+.slider {
+    display: flex;
+    animation: marquee 20s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Adjust spacing and other styles as needed */
+  .slider img {
+    width: 300px; /* Adjust as per your image dimensions */
+  }
+  
+  /* CSS to adjust the border for mobile devices */
+@media (max-width: 767px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .border-yellow-600 {
+      border-left: 2px solid #ffc107;
+      border-right: 2px solid #ffc107;
+    }
+  }

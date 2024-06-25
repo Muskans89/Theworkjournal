@@ -1,0 +1,71 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .slider {
+    display: flex;
+    width: max-content;
+    animation: slide 20s linear infinite;
+  }
+
+  .story-images-container {
+    animation: scrollImages 60s linear infinite;
+    white-space: nowrap;
+  }
+  
+  .story-images-container img {
+    flex: 0 0 auto;
+    width: 200px; /* Adjust width as per your design */
+    height: auto;
+  }
+  
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @font-face {
+    font-family: 'Brittany'; /* Replace with your font name */
+    src: url('../public/BrittanySignature.ttf') format('truetype'); /* Replace with the path to your font file */
+  }
+  
+  @media (max-width: 640px) {
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    /* Adjust other styles as needed */
+  }
+  
+  .rounded-rect {
+    border-radius: 8px; /* Rounded corners for rectangular images */
+  }
+  
+  @media (max-width: 640px) {
+    .rounded-rect {
+      border-radius: 50%; /* Circular images on mobile devices */
+    }
+  }
+  
+  
+  
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

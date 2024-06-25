@@ -1,0 +1,12 @@
+.collection-container {
+    padding: 10px; /* Adjust padding for spacing */
+    outline: 8px solid rgba(255, 255, 255, 0.8); /* Use outline for inset border effect */
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.8); /* Add a box-shadow for additional border visibility */
+  }
+  
+  @media (max-width: 640px) {
+    .collection-container {
+      padding-left: 4px; /* Adjust padding to inset content from left */
+      padding-right: 4px; /* Adjust padding to inset content from right */
+    }
+  }  

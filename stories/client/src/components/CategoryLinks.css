@@ -1,0 +1,58 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column */
+    gap: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for screens wider than 640px (sm breakpoint) */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for screens wider than 768px (md breakpoint) */
+    }
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .max-w-xs {
+    max-width: 20rem; /* Adjust maximum width for mobile devices */
+  }
+  
+  .max-w-full {
+    max-width: none; /* Reset maximum width for larger screens */
+  }
+  
+  .sm\:w-auto {
+    width: auto; /* Allow auto width on larger screens */
+  }
+  
+  /* No need for .rounded or .rounded-circle here to keep images rectangular *//* CategoryLinks.css */
+.category-list {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .category-list {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS devices */
+      scrollbar-width: none; /* Hides scrollbar for Chrome, Edge, and Safari */
+      -ms-overflow-style: none; /* Hides scrollbar for Internet Explorer */
+    }
+    .category-list::-webkit-scrollbar {
+      display: none; /* Hides scrollbar for Chrome, Edge, and Safari */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .category-list {
+      justify-content: center; /* Center align items for PC screens */
+    }
+  }
+    

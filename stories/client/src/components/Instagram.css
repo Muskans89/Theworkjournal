@@ -1,0 +1,56 @@
+.carousel-post {
+    position: relative;
+  }
+  
+  .carousel-post img {
+    display: block;
+  }
+  
+  .carousel-caption {
+    
+    color: white;
+    padding: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-post {
+      height: 50vh; /* 50% of viewport height for larger screens */
+    }
+  
+    .carousel-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .carousel-post {
+      height: 30vh; /* 30% of viewport height for smaller screens */
+    }
+  
+    .carousel-caption {
+      position: relative;
+      
+      margin-top: 10px; /* Add space between the image and caption */
+    }
+  }
+  
+  /* Instagram.css */
+.carousel-post {
+  height: 300px; /* Adjust height as needed */
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  
+  color: white;
+  text-align: center;
+}
+

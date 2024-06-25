@@ -1,0 +1,76 @@
+/* styles.css */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-image.active {
+    opacity: 1;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-button.left {
+    left: 1rem;
+  }
+  
+  .carousel-button.right {
+    right: 1rem;
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-container {
+      height: 400px; /* Adjust height for mobile screens */
+    }
+    
+    .carousel-button {
+      padding: 0.25rem;
+    }
+  
+    .carousel-button.left {
+      left: 0.5rem;
+    }
+  
+    .carousel-button.right {
+      right: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-container {
+      height: 300px; /* Further adjust height for smaller screens */
+    }
+  
+    .carousel-button {
+      padding: 0.2rem;
+    }
+  }
+  
